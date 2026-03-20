@@ -10,3 +10,7 @@ __pycache__/
 build/
 local.properties
 .idea/
+
+google-services.json
+.env
+*.json
