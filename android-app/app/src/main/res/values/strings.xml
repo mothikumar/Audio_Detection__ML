@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Spam Call Blocker</string>
+    <string name="success_call_screening_role">Success requesting role call screening!</string>
+    <string name="failed_call_screening_role">Failed requesting role call screening</string>
+    <string name="telecom_manager_unavailable">Telecom Manager is unavailable.</string>
+    <string name="call_screening_role_prompt">Please grant the call screening role.</string>
+    <string name="permissions_required_title">Permissions Required</string>
+    <string name="permissions_required_message">The following permissions are required for the app to function properly:\n\n%s\n\nPlease go to system settings and grant the permissions manually.</string>
+    <string name="go_to_settings">Go to settings</string>
+    <string name="permission_read_call_log">Read Call Log</string>
+    <string name="permission_read_phone_state">Read Phone State</string>
+    <string name="permission_read_contacts">Read Contacts</string>
+    <string name="permission_answer_phone_calls">Answer Phone Calls</string>
+    <string name="permission_post_notifications">Post Notifications</string>
+    <string name="blocked_text_format">%1$s (blocked)</string>
+    <string name="whitelisted_text_format">%1$s (whitelist)</string>
+    <string name="duration_label">Duration: %1$d seconds</string>
+    <string name="incoming_call_not_spam">The incoming call appears not to be spam</string>
+    <string name="notification_channel_name">Spam Call Blocker</string>
+    <string name="notification_title_spam_blocked">Call blocked: %1$s</string>
+    <string name="number_copied_to_clipboard">Phone number copied to clipboard</string>
+
+    <!-- Call types -->
+    <string name="call_incoming">Incoming call</string>
+    <string name="call_missed">Missed call</string>
+    <string name="call_rejected">Rejected call</string>
+    <string name="call_blocked">Blocked call</string>
+    <string name="call_unknown">Unknown</string>
+
+    <!-- Preferences -->
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="donate">Donate</string>
+
+    <!-- Preferences Sections -->
+    <string name="pref_category_general_blocking">General</string>
+    <string name="pref_category_unknown_phone_api">Unknownphone API 🌐</string>
+    <string name="pref_category_tellows_api">Tellows API 🌐</string>
+    <string name="pref_category_truecaller_api">Truecaller API 🌐</string>
+    <string name="pref_category_spam_filters">Spam Number Filters</string>
+    <string name="pref_category_pattern_blocking">Pattern Blocking</string>
+    <string name="pref_category_other_options">Other Blocking Options</string>
+    <string name="pref_category_notifications">Notifications</string>
+
+    <!-- Pattern Blocking Settings -->
+    <string name="pref_enable_pattern_blocking_title">Enable Pattern Blocking</string>
+    <string name="pref_enable_pattern_blocking_summary">Block calls matching specific number patterns</string>
+    <string name="pref_pattern_list_title">Pattern List</string>
+    <string name="pref_pattern_list_summary">Enter patterns to block (one per line)</string>
+    <string name="pref_pattern_list_error">Invalid pattern. Use only numbers, +, and *. Patterns cannot contain **.</string>
+    <string name="pref_pattern_list_example">E.g.: +33162* (starts with), *98 (ends with), 213*134 (starts and ends with), *123* (contains 123 anywhere in between). Don\'t add phone number prefix for numbers in your country. One per line.</string>
+
+    <!-- General Blocking Settings -->
+    <string name="pref_enable_blocking_title">Enable Blocking</string>
+    <string name="pref_enable_blocking_summary">Enable or disable call blocking functionality</string>
+
+    <!-- API Unknownphone -->
+    <string name="pref_filter_lista_spam_title">API Unknownphone</string>
+    <string name="pref_filter_lista_spam_summary">(Recommended) Blocks calls from spam numbers listed in unknownphone.com API</string>
+
+    <string name="pref_filter_lista_spam_api_language_title">unknownphone.com API Language</string>
+    <string name="pref_filter_lista_spam_api_language_summary">Select the language for searches in the unknownphone.com API (affects results)</string>
+
+    <!-- API Tellows -->
+    <string name="pref_filter_tellows_title">Tellows API</string>
+    <string name="pref_filter_tellows_summary">(Recommended) Blocks calls from spam numbers listed in the Tellows API</string>
+
+    <string name="pref_filter_tellows_api_country_title">Tellows API Country</string>
+    <string name="pref_filter_tellows_api_country_summary">Select the country for searches in the Tellows API (affects results)</string>
+
+    <!-- API Truecaller -->
+    <string name="pref_filter_truecaller_title">Truecaller API</string>
+    <string name="pref_filter_truecaller_summary">(Recommended) Blocks calls from spam numbers identified by Truecaller API</string>
+
+    <string name="pref_filter_truecaller_api_country_title">Truecaller API Country</string>
+    <string name="pref_filter_truecaller_api_country_summary">Select the country for searches in the Truecaller API (affects results)</string>
+
+    <!-- Other Blocking Options -->
+    <string name="pref_block_non_contacts_title">Block Non-Contacts</string>
+    <string name="pref_block_non_contacts_summary">Block calls from numbers not saved in contacts</string>
+
+    <string name="pref_block_hidden_numbers_title">Block Hidden Numbers</string>
+    <string name="pref_block_hidden_numbers_summary">Block calls from hidden or private numbers</string>
+
+    <string name="pref_block_international_numbers_title">Block International Calls</string>
+    <string name="pref_block_international_numbers_summary">Block calls from other countries</string>
+
+    <string name="pref_block_stir_shaken_risk_title">Verify with STIR/SHAKEN</string>
+    <string name="pref_block_stir_shaken_risk_summary">Block calls marked as potentially fraudulent by the STIR/SHAKEN system (Android 11+ only, available in some countries and carriers)</string>
+
+    <string name="pref_mute_instead_of_block_title">Mute Instead of Block</string>
+    <string name="pref_mute_instead_of_block_summary">Mute incoming spam calls instead of blocking them completely</string>
+
+    <!-- Notifications -->
+    <string name="pref_show_notification_title">Show Notification on Block</string>
+    <string name="pref_show_notification_summary">Display a notification when a call is blocked</string>
+
+    <!-- Call item actions  -->
+    <string name="open_in_lista_spam_com">Open in ListaSpam</string>
+    <string name="open_in_unknown_phone_com">Open in UnknownPhone</string>
+    <string name="search_in_google">Search in Google</string>
+    <string name="open_in_whatsapp">Open in WhatsApp</string>
+    <string name="add_to_contacts">Add to contacts</string>
+    <string name="block">Block</string>
+    <string name="add_to_whitelist">Add to whitelist</string>
+    <string name="unblock">Unblock</string>
+    <string name="remove_from_whitelist">Remove from whitelist</string>
+
+    <!-- SpamUtils blocking reasons -->
+    <string name="block_reason_long">Call blocked:</string>
+    <string name="block_reason">Reason:</string>
+    <string name="blocking_disabled">Call blocking is disabled in settings</string>
+    <string name="block_stir_shaken_risk">STIR/SHAKEN - likely spoofed call</string>
+    <string name="block_hidden_number">Hidden number</string>
+    <string name="block_spam_number">Reported as spam</string>
+    <string name="block_international_call">International call</string>
+    <string name="block_pattern_match">Pattern match</string>
+    <string name="block_already_blocked_number">Blocked number</string>
+    <string name="block_non_contact">Not a contact</string>
+    <string name="export_config">Export settings and lists</string>
+    <string name="import_config">Import settings and lists</string>
+    <string name="test_number">Test number</string>
+    <string name="aceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="type_number">Please, type a valid number</string>
+
+    <!-- Updates -->
+    <string name="update_available_title">Update Available</string>
+    <string name="update_available_message">There is a new version: %1$s\nDo you want to download it?</string>
+
+    <!-- Reports -->
+    <string name="report_title">Report Number</string>
+    <string name="report_label">Describe the reason</string>
+    <string name="report_hint">Brief explanation</string>
+    <string name="where_to_report">Where do you want to report?</string>
+    <string name="report_spam">It is spam</string>
+    <string name="report_not_spam">It is NOT spam</string>
+    <string name="accept">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="report_validation_message">Must contain at least 2 words and 5 letters.</string>
+    <string name="report_radio_validation">Please select whether it is spam or not.</string>
+    <string name="report_success_prefix">Report sent to</string>
+    <string name="and">and</string>
+    <string name="report_failure">Report could not be sent</string>
+    <string name="select_at_least_one_provider">Select at least one provider</string>
+    <string name="reported_to_unknown_phone">UnknownPhone</string>
+    <string name="reported_to_tellows">Tellows</string>
+    <string name="reported_to_truecaller">TrueCaller</string>
+    <string name="truecaller_prefix_repository">TrueCaller (%1$s prefix repository)</string>
+    <string name="truecaller_default_repository">TrueCaller (default prefix repository)</string>
+    <string name="provider_repository_format">%1$s (%2$s repository)</string>
+    <string name="unknown_value">Unknown</string>
+
+
+    <!-- Import/export -->
+    <string name="preferences_import_success">Preferences imported successfully</string>
+    <string name="preferences_import_error">Error importing preferences</string>
+    <string name="invalid_json_file">The JSON file is not valid</string>
+    <string name="preferences_export_success">Preferences exported successfully</string>
+    <string name="preferences_export_error">Error exporting preferences</string>
+
+    <!-- Update check preference -->
+    <string name="pref_enable_update_check_title">Check for updates automatically</string>
+    <string name="pref_enable_update_check_summary">If disabled, the app will not check for new versions automatically</string>
+
+    <!-- Donation Screen -->
+    <string name="donation_screen_title">Donations</string>
+    <string name="copy_address">Copy</string>
+    <string name="address_copied">Address copied</string>
+    <string name="donation_help_development">Help support the development and maintenance of this app!</string>
+    <string name="donation_traditional_methods">Support via traditional methods:</string>
+    <string name="donation_crypto_methods">Or if you prefer, you can donate with cryptocurrencies:</string>
+
+    <!-- AI Voice Detection Feature -->
+    <string name="AI_Detection">AI Voice Detection</string>
+    <string name="select_audio_file">Select Audio File</string>
+    <string name="analyzing_audio">Analyzing audio...</string>
+    <string name="upload_progress">Uploading: %d%%</string>
+    <string name="prediction_label">Prediction: %s</string>
+    <string name="confidence_label">Confidence: %d%%</string>
+    <string name="risk_level_label">Risk Level: %s</string>
+    <string name="error_file_too_large">File is too large (max 10MB)</string>
+    <string name="error_invalid_format">Invalid audio format. Please use WAV, MP3, or M4A.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    <string name="retry">Retry</string>
+    <string name="survey_title">Help us improve</string>
+    <string name="survey_option_ai">AI-generated voice</string>
+    <string name="survey_option_spam">Spam / Advertisement</string>
+    <string name="survey_option_genuine">Genuine call</string>
+    <string name="survey_submit">Submit Feedback</string>
+    <string name="feedback_received">Thank you for your feedback!</string>
+    <string name="user_balance_label">Available Balance: %d %s</string>
+</resources>

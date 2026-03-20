@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />  <!-- This forces it into 3-dot menu -->
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/donate"
+        android:title="@string/donate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/test_number"
+        android:title="@string/test_number"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/AI_Detection"
+        android:title="@string/AI_Detection"
+        app:showAsAction="never" />
+</menu>

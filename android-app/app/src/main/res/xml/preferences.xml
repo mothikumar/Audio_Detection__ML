@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- General Blocking Settings -->
+    <PreferenceCategory
+        android:title="@string/pref_category_general_blocking">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_enable_blocking"
+            android:summary="@string/pref_enable_blocking_summary"
+            android:title="@string/pref_enable_blocking_title" />
+
+    </PreferenceCategory>
+
+    <!-- Spam Number Filters -->
+    <PreferenceCategory
+        android:title="@string/pref_category_unknown_phone_api">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_filter_lista_spam"
+            android:summary="@string/pref_filter_lista_spam_summary"
+            android:title="@string/pref_filter_lista_spam_title" />
+
+        <ListPreference
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_values"
+            android:key="pref_language"
+            android:summary="@string/pref_filter_lista_spam_api_language_summary"
+            android:title="@string/pref_filter_lista_spam_api_language_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_tellows_api">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_tellows_api"
+            android:summary="@string/pref_filter_tellows_summary"
+            android:title="@string/pref_filter_tellows_title" />
+
+        <ListPreference
+            android:entries="@array/entries_region_preference"
+            android:entryValues="@array/entryvalues_region_preference"
+            android:key="pref_tellows_country"
+            android:summary="@string/pref_filter_tellows_api_country_summary"
+            android:title="@string/pref_filter_tellows_api_country_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_category_truecaller_api">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_truecaller_api"
+            android:summary="@string/pref_filter_truecaller_summary"
+            android:title="@string/pref_filter_truecaller_title" />
+
+        <ListPreference
+            android:entries="@array/truecaller_region_display"
+            android:entryValues="@array/truecaller_region_code"
+            android:key="pref_truecaller_country"
+            android:summary="@string/pref_filter_truecaller_api_country_summary"
+            android:title="@string/pref_filter_truecaller_api_country_title" />
+
+    </PreferenceCategory>
+
+    <!-- Pattern Blocking -->
+    <PreferenceCategory
+        android:title="@string/pref_category_pattern_blocking">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_enable_pattern_blocking"
+            android:summary="@string/pref_enable_pattern_blocking_summary"
+            android:title="@string/pref_enable_pattern_blocking_title" />
+
+        <com.addev.listaspam.preferences.PatternListPreference
+            android:key="pref_pattern_list"
+            android:summary="@string/pref_pattern_list_summary"
+            android:title="@string/pref_pattern_list_title"
+            android:dialogMessage="@string/pref_pattern_list_example" />
+
+    </PreferenceCategory>
+
+    <!-- Other Blocking Options -->
+    <PreferenceCategory
+        android:title="@string/pref_category_other_options">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_block_non_contacts"
+            android:summary="@string/pref_block_non_contacts_summary"
+            android:title="@string/pref_block_non_contacts_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_block_hidden_numbers"
+            android:summary="@string/pref_block_hidden_numbers_summary"
+            android:title="@string/pref_block_hidden_numbers_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_block_international_numbers"
+            android:summary="@string/pref_block_international_numbers_summary"
+            android:title="@string/pref_block_international_numbers_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_block_stir_shaken_risk"
+            android:summary="@string/pref_block_stir_shaken_risk_summary"
+            android:title="@string/pref_block_stir_shaken_risk_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_mute_instead_of_block"
+            android:summary="@string/pref_mute_instead_of_block_summary"
+            android:title="@string/pref_mute_instead_of_block_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_enable_update_check"
+            android:summary="@string/pref_enable_update_check_summary"
+            android:title="@string/pref_enable_update_check_title" />
+
+    </PreferenceCategory>
+
+    <!-- Notifications -->
+    <PreferenceCategory
+        android:title="@string/pref_category_notifications">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_show_notification"
+            android:summary="@string/pref_show_notification_summary"
+            android:title="@string/pref_show_notification_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
